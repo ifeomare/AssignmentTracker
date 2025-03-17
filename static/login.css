@@ -1,0 +1,33 @@
+body{
+    width: 98vw;
+    height: 98vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid pink;
+}
+.sign-in{
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid black
+}
+form{
+    height: 25vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid yellow;
+}
+.input-field{
+    /* width: 25vh; */
+    /* height: 25vh; */
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
