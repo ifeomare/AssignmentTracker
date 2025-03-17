@@ -16,9 +16,16 @@ def login():
         print(un,pw)
     return render_template('login.html')
 
-# @app.route("/create-account")
-# def create_account():
-#     return "This is the new account page"
+@app.route("/create-account", methods=['GET', 'POST'])
+def create_account():
+    if request.method == 'POST':
+        email = request.form.get('email')
+        un = request.form.get('username')
+        pw = request.form.get('password')
+        major = request.form.get('major')
+        institution = request.form.get('institution')
+        print(email, un, pw, major, institution)
+    return render_template('sign-up.html')
 
 # @app.route("/<username>/dashboard")
 # def dashboard(username):
